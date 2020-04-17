@@ -1,7 +1,11 @@
 # Security-Issue-in-IS
 Đồ án môn An toàn bảo mật trong hệ thống thông tin. 
+
+
 Trường Đại hoc Khoa học Tự Nhiên
+
 Khoa công nghệ thông tin
+
 Chuyên ngành Hệ thống thống tin
 
 Thành viên nhóm
