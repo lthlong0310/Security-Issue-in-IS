@@ -1,0 +1,27 @@
+Chia công việc đồ án ATBM-TT 
+-->Phân hệ 1 DÀNH CHO NGƯỜI QUẢN TRỊ NGƯỜI DÙNG VÀ ĐIỀU KHIỂN TRUY
+CẬP
+1. Xem danh sách người dùng trong hệ thống.
+   Xem danh sách các đối tượng hiện có trên CSDL (user, role, table, view, ....)	
+   Thông tin về quyền (privileges) của mỗi user/ role trên các đối tượng dữ liệu.
+2. Cho phép tạo mới, xóa, sửa (hiệu chỉnh) user hoặc role.
+   Cho phép thực hiện việc cấp quyền: cấp quyền cho user, cấp quyền cho role, cấp role cho user.Quyền, select, update thì cho phép phân quyền tinh đến mức cột;
+ quyền insert, delete thì không.
+3. chức năng ghi nhật ký hệ thống
+  Admin có quyền enable/ disable việc ghi nhật ký toàn hệ thống.
+  Admin được chỉ định ghi nhật ký của những hành động thực hiện bởi những user nào
+trên những đối tượng cụ thể. Các hành động đó là: đăng nhập, thay đổi thông tin user account, select, insert, update, delete, execute.; các đối tượng là table, view, stored procedure, function. Admin cũng được quyền chọn ghi nhật ký hành động được thực hiện thành công hay không thành công.
+  Kiểm tra dữ liệu nhật ký hệ thống. Sinh viên nên đề ra một số kịch bản theo dõi hệ thống
+để phân tích dữ liệu nhật ký.
+4. Cho phép thu hồi quyền từ người dùng/ role.
+   Cho phép kiểm tra quyền của các chủ thể vừa được cấp quyền.
+   Cho phép chỉnh sửa quyền của user/ role.
+5. Làm giao diện cho người quản trị quản lý hê thống
+Lưu ý:Sử dụng tài khoản SYSTEM sao đó cấp quyền cho các user khác
+Làm xong đẩy code lên drive
+Chú thích từng dòng code nha
+Note:
+Cuốn đồ án
+---Ghi rõ tài liệu tham khảo (Reference)
+---Trình bày ngắn gọn dễ hiểu không dịch lại tài liệu, chủ yếu là phần tóm lược những gì tìm hiểu được, nhận xét, đánh giá, thuyết minh các kết quả đạt được.
+---Ghi rõ nhóm đã cài đặt những chính sách bảo mật cụ thể nào, kịch bản gì.
