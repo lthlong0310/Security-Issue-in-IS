@@ -1,0 +1,15 @@
+﻿---Lop
+insert into Lop values('17CLC', 'Chất lượng cao');
+insert into Lop values('17VP', 'Việt Pháp');
+
+select * from bomon;
+--BoMon
+insert into bomon values('httt', N'Hệ  thống thông tin', NULL);
+insert into bomon values('ktpm', N'Kỹ thuật phần mềm', NULL);
+insert into bomon values('khmt', N'Khoa học máy tính', NULL);
+--
+---GiaoVien
+insert into Giaovien values('gvhttt_nahoang', N'Nguyễn Ánh Hoàng', to_date('02-11-1960', 'dd-mm-yyyy'),N'332 Nguyễn Thái Học, Tp HCM', 'Nam', '123456781', '987654321', 'hoang@gmail.com', 'httt', '0', '1' );
+insert into GiaoVien values('giaovu', N'Trần Tuấn Khải', to_date('08-02-1962','dd-mm-yyyy'), N'80 Lê Hồng Phong, Tp HCM', 'Nam', '123456123', '987654322', 'khai@gmail.com', NULL, '0', '0');
+insert into GiaoVien values('gvktpm_lbluan', N'Lý Bá Luân', to_date('02-01-1967','dd-mm-yyyy'), N'34 Mai Thị Lự, Tp HCM', 'Nam', '123456124', '987654323', 'luan@gmail.com', 'ktpm', '0', '1');
+insert into GiaoVien values('gvkhmt_ltlinh', N'Lý Tú Linh', to_date('03-04-1967','dd-mm-yyyy'), N'95 Bà Rịa, Vũng Tàu', 'Nam', '123456125', '987654324', 'linh@gmail.com', 'khmt', '0', '1');
