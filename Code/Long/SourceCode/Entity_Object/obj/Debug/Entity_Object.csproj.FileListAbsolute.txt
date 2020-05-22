@@ -1,0 +1,6 @@
+D:\LONG\LEARNING\Year 3\Term 2\ATBM-TT\DA\SourceCode\Entity_Object\bin\Debug\Entity_Object.dll
+D:\LONG\LEARNING\Year 3\Term 2\ATBM-TT\DA\SourceCode\Entity_Object\bin\Debug\Entity_Object.pdb
+D:\LONG\LEARNING\Year 3\Term 2\ATBM-TT\DA\SourceCode\Entity_Object\obj\Debug\Entity_Object.csproj.CoreCompileInputs.cache
+D:\LONG\LEARNING\Year 3\Term 2\ATBM-TT\DA\SourceCode\Entity_Object\obj\Debug\Entity_Object.dll
+D:\LONG\LEARNING\Year 3\Term 2\ATBM-TT\DA\SourceCode\Entity_Object\obj\Debug\Entity_Object.pdb
+D:\LONG\LEARNING\Year 3\Term 2\ATBM-TT\DA\SourceCode\Entity_Object\obj\Debug\Entity_Object.csprojAssemblyReference.cache
