@@ -15,8 +15,10 @@ namespace Entity
         public String sdtgv { get; set; }
         public String emailgv { get; set; }
         public String bomon { get; set; }
+        public String loaigvien { get; set; }
+        public String truongbomon { get; set; }
 
-        public GiaoVien(String ma, String ten, String dob, String dchi, String gt, String cmnd, String sdt, String email, String bm)
+        public GiaoVien(String ma, String ten, String dob, String dchi, String gt, String cmnd, String sdt, String email, String bm, String loai, String trgbm)
         {
             magv = ma;
             tengv = ten;
@@ -27,7 +29,23 @@ namespace Entity
             sdtgv = sdt;
             emailgv = email;
             bomon = bm;
-            
+            loaigvien = loai;
+            truongbomon = trgbm;
+        }
+
+        public GiaoVien(String ma, String ten, String dob, String dchi, String gt, String cmnd, String sdt, String email, String bm, String trgbm)
+        {
+            magv = ma;
+            tengv = ten;
+            dobgv = dob;
+            diachigv = dchi;
+            gioitinhgv = gt;
+            cmndgv = cmnd;
+            sdtgv = sdt;
+            emailgv = email;
+            bomon = bm;
+            loaigvien = "";
+            truongbomon = trgbm;
         }
     }
 }

@@ -68,6 +68,8 @@ namespace UI
             else
             {
                 MessageBox.Show("Invalid username or password!");
+                this.usernametb.Text = "";
+                this.passwordtb.Text = "";
             }
             this.Close();
         }
