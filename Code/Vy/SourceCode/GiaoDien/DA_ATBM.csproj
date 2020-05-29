@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C61261D7-AE9C-459A-918E-26032669F7F9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GiaoDien</RootNamespace>
+    <AssemblyName>GiaoDien</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.18.3, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AuditAllForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AuditAllForm.Designer.cs">
+      <DependentUpon>AuditAllForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AuditConditionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AuditConditionForm.Designer.cs">
+      <DependentUpon>AuditConditionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckLogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckLogForm.Designer.cs">
+      <DependentUpon>CheckLogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DropRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DropRole.Designer.cs">
+      <DependentUpon>DropRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DropUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DropUser.Designer.cs">
+      <DependentUpon>DropUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DsUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DsUser.Designer.cs">
+      <DependentUpon>DsUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdmin.Designer.cs">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQuyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQuyen.Designer.cs">
+      <DependentUpon>FormQuyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQuyenUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQuyenUser.Designer.cs">
+      <DependentUpon>FormQuyenUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GrantPrivs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GrantPrivs.Designer.cs">
+      <DependentUpon>GrantPrivs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogManagementForm.Designer.cs">
+      <DependentUpon>LogManagementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Role.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Role.Designer.cs">
+      <DependentUpon>Role.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaoRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaoRole.Designer.cs">
+      <DependentUpon>TaoRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaoUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaoUser.Designer.cs">
+      <DependentUpon>TaoUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User.Designer.cs">
+      <DependentUpon>User.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AuditAllForm.resx">
+      <DependentUpon>AuditAllForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuditConditionForm.resx">
+      <DependentUpon>AuditConditionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckLogForm.resx">
+      <DependentUpon>CheckLogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DropRole.resx">
+      <DependentUpon>DropRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DropUser.resx">
+      <DependentUpon>DropUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DsUser.resx">
+      <DependentUpon>DsUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdmin.resx">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQuyen.resx">
+      <DependentUpon>FormQuyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQuyenUser.resx">
+      <DependentUpon>FormQuyenUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GrantPrivs.resx">
+      <DependentUpon>GrantPrivs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogManagementForm.resx">
+      <DependentUpon>LogManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Role.resx">
+      <DependentUpon>Role.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaoRole.resx">
+      <DependentUpon>TaoRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaoUser.resx">
+      <DependentUpon>TaoUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User.resx">
+      <DependentUpon>User.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-name-96 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-name-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-name-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-name-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-lock-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-lock-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-lock-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-lock-landscape-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-lock-portrait-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-lock-portrait-601.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-lock-52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-lock-50 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-lock-52 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-name-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\App-login-manager-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-ok-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-ok-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Business_Logic_Layer\Business_Logic_Layer.csproj">
+      <Project>{8028c830-0bb3-40a0-99f6-3e8cdf75092a}</Project>
+      <Name>Business_Logic_Layer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entity_Object\Entity_Object.csproj">
+      <Project>{041b7e79-e78d-40dd-b4ba-8c96d3b55d20}</Project>
+      <Name>Entity_Object</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
