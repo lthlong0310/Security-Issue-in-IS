@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EDB09185-1FA0-4281-9F81-64F182586502}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>UI</RootNamespace>
+    <AssemblyName>UI</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CapNhatDiemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapNhatDiemForm.Designer.cs">
+      <DependentUpon>CapNhatDiemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DangKyHocPhanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangKyHocPhanForm.Designer.cs">
+      <DependentUpon>DangKyHocPhanForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiaoVienMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiaoVienMenuForm.Designer.cs">
+      <DependentUpon>GiaoVienMenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiaoVuMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiaoVuMenuForm.Designer.cs">
+      <DependentUpon>GiaoVuMenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoMonHocForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoMonHocForm.Designer.cs">
+      <DependentUpon>MoMonHocForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SinhVienMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SinhVienMenuForm.Designer.cs">
+      <DependentUpon>SinhVienMenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongTinCaNhan_GV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongTinCaNhan_GV.Designer.cs">
+      <DependentUpon>ThongTinCaNhan_GV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongTinCaNhan_SV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongTinCaNhan_SV.Designer.cs">
+      <DependentUpon>ThongTinCaNhan_SV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TruongBoMonMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TruongBoMonMenuForm.Designer.cs">
+      <DependentUpon>TruongBoMonMenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TruongKhoaMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TruongKhoaMenuForm.Designer.cs">
+      <DependentUpon>TruongKhoaMenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XemDanhSachDangKyMonHocForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XemDanhSachDangKyMonHocForm.Designer.cs">
+      <DependentUpon>XemDanhSachDangKyMonHocForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XemDanhSachSinhVienForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XemDanhSachSinhVienForm.Designer.cs">
+      <DependentUpon>XemDanhSachSinhVienForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XemDanhSachSVMonHocForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XemDanhSachSVMonHocForm.Designer.cs">
+      <DependentUpon>XemDanhSachSVMonHocForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XemKetQuaHocPhanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XemKetQuaHocPhanForm.Designer.cs">
+      <DependentUpon>XemKetQuaHocPhanForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CapNhatDiemForm.resx">
+      <DependentUpon>CapNhatDiemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DangKyHocPhanForm.resx">
+      <DependentUpon>DangKyHocPhanForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiaoVienMenuForm.resx">
+      <DependentUpon>GiaoVienMenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiaoVuMenuForm.resx">
+      <DependentUpon>GiaoVuMenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoMonHocForm.resx">
+      <DependentUpon>MoMonHocForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SinhVienMenuForm.resx">
+      <DependentUpon>SinhVienMenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongTinCaNhan_GV.resx">
+      <DependentUpon>ThongTinCaNhan_GV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongTinCaNhan_SV.resx">
+      <DependentUpon>ThongTinCaNhan_SV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TruongBoMonMenuForm.resx">
+      <DependentUpon>TruongBoMonMenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TruongKhoaMenuForm.resx">
+      <DependentUpon>TruongKhoaMenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XemDanhSachDangKyMonHocForm.resx">
+      <DependentUpon>XemDanhSachDangKyMonHocForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XemDanhSachSinhVienForm.resx">
+      <DependentUpon>XemDanhSachSinhVienForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XemDanhSachSVMonHocForm.resx">
+      <DependentUpon>XemDanhSachSVMonHocForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XemKetQuaHocPhanForm.resx">
+      <DependentUpon>XemKetQuaHocPhanForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{559d7567-6574-4aef-8045-727a682075ed}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entity\Entity.csproj">
+      <Project>{fa8c4354-7f98-45ec-8006-88152d8a819e}</Project>
+      <Name>Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
