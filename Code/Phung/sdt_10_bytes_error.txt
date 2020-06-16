@@ -1,0 +1,150 @@
+
+Error starting at line : 41 in command -
+BEGIN 
+    FOR STT IN(SELECT COUNT(MSSV)FROM SINHVIEN)
+    LOOP
+        UPDATE GIAOVIEN SET sdt_gv = NV_ENCRYPT.ENCRYPT_(sdt_gv);
+    END LOOP;
+END;
+Error report -
+ORA-12899: value too large for column "SYS"."GIAOVIEN"."SDT_GV" (actual: 32, maximum: 10)
+ORA-06512: at line 4
+ORA-06512: at line 4
+12899. 00000 -  "value too large for column %s (actual: %s, maximum: %s)"
+*Cause:    An attempt was made to insert or update a column with a value
+           which is too wide for the width of the destination column.
+           The name of the column is given, along with the actual width
+           of the value, and the maximum allowed width of the column.
+           Note that widths are reported in characters if character length
+           semantics are in effect for the column, otherwise widths are
+           reported in bytes.
+*Action:   Examine the SQL statement for correctness.  Check source
+           and destination column data types.
+           Either make the destination column wider, or use a subset
+           of the source column (i.e. use substring).
+
+MAGIAOVIEN      HOTEN_GIAOVIEN                                     NGAYSINH_ DIACHI_GV                                            GIO CMND_GV     SDT_GV     EMAIL_GV                  MABOMON    T L
+--------------- -------------------------------------------------- --------- ----------------------------------------------------------------------------------------------------------------------------------------------------
+gvhttt_nahoang  Nguyen Anh Hoang                                   02-NOV-60 332 Nguyen Thai Hoc, Tp HCM                          Nam 123456781   987654321  hoang@gmail.com           httt       0 1
+gvu_ntmthu      Nguyen Tuan My Thu                                 08-FEB-62 80 Le Hong Phong, Tp HCM                             Nam 123456123   987654322  khai@gmail.com                       0 0
+gvktpm_lbluan   Ly Ba Luan                                         02-JAN-67 34 Mai Thi Lu, Tp HCM                                Nam 123456124   987654323  luan@gmail.com            ktpm       0 1
+gvkhmt_ltlinh   Ly Tu Linh                                         03-APR-67 95 Ba ria Vung Tau                                   Nam 123456125   987654324  linh@gmail.com            khmt       0 1
+
+
+Error starting at line : 41 in command -
+BEGIN 
+    FOR STT IN(SELECT COUNT(MAGIAOVIEN)FROM GIAOVIEN)
+    LOOP
+        UPDATE GIAOVIEN SET sdt_gv = NV_ENCRYPT.ENCRYPT_(sdt_gv);
+    END LOOP;
+END;
+Error report -
+ORA-12899: value too large for column "SYS"."GIAOVIEN"."SDT_GV" (actual: 32, maximum: 10)
+ORA-06512: at line 4
+ORA-06512: at line 4
+12899. 00000 -  "value too large for column %s (actual: %s, maximum: %s)"
+*Cause:    An attempt was made to insert or update a column with a value
+           which is too wide for the width of the destination column.
+           The name of the column is given, along with the actual width
+           of the value, and the maximum allowed width of the column.
+           Note that widths are reported in characters if character length
+           semantics are in effect for the column, otherwise widths are
+           reported in bytes.
+*Action:   Examine the SQL statement for correctness.  Check source
+           and destination column data types.
+           Either make the destination column wider, or use a subset
+           of the source column (i.e. use substring).
+
+COUNT(MAGIAOVIEN)
+-----------------
+                4
+
+
+Error starting at line : 41 in command -
+BEGIN 
+    FOR STT IN(SELECT COUNT(MAGIAOVIEN)FROM GIAOVIEN)
+    LOOP
+        UPDATE GIAOVIEN SET sdt_gv = NV_ENCRYPT.ENCRYPT_(sdt_gv);
+    END LOOP;
+END;
+Error report -
+ORA-12899: value too large for column "SYS"."GIAOVIEN"."SDT_GV" (actual: 32, maximum: 10)
+ORA-06512: at line 4
+ORA-06512: at line 4
+12899. 00000 -  "value too large for column %s (actual: %s, maximum: %s)"
+*Cause:    An attempt was made to insert or update a column with a value
+           which is too wide for the width of the destination column.
+           The name of the column is given, along with the actual width
+           of the value, and the maximum allowed width of the column.
+           Note that widths are reported in characters if character length
+           semantics are in effect for the column, otherwise widths are
+           reported in bytes.
+*Action:   Examine the SQL statement for correctness.  Check source
+           and destination column data types.
+           Either make the destination column wider, or use a subset
+           of the source column (i.e. use substring).
+
+COUNT(MAGIAOVIEN)
+-----------------
+                4
+
+
+MAGIAOVIEN      HOTEN_GIAOVIEN                                     NGAYSINH_ DIACHI_GV                                                                                                                                              GIO CMND_GV     SDT_GV     EMAIL_GV                                           MABOMON    T L
+--------------- -------------------------------------------------- --------- ------------------------------------------------------------------------------------------------------------------------------------------------------ --- ----------- ---------- -------------------------------------------------- ---------- - -
+gvhttt_nahoang  Nguyen Anh Hoang                                   02-NOV-60 332 Nguyen Thai Hoc, Tp HCM                                                                                                                            Nam 123456781   987654321  hoang@gmail.com                                    httt       0 1
+gvu_ntmthu      Nguyen Tuan My Thu                                 08-FEB-62 80 Le Hong Phong, Tp HCM                                                                                                                               Nam 123456123   987654322  khai@gmail.com                                                0 0
+gvktpm_lbluan   Ly Ba Luan                                         02-JAN-67 34 Mai Thi Lu, Tp HCM                                                                                                                                  Nam 123456124   987654323  luan@gmail.com                                     ktpm       0 1
+gvkhmt_ltlinh   Ly Tu Linh                                         03-APR-67 95 Ba ria Vung Tau                                                                                                                                     Nam 123456125   987654324  linh@gmail.com                                     khmt       0 1
+
+
+PL/SQL procedure successfully completed.
+
+
+MAGIAOVIEN      HOTEN_GIAOVIEN                                     NGAYSINH_ DIACHI_GV                                                                                                                                              GIO CMND_GV     SDT_GV     EMAIL_GV                                           MABOMON    T L
+--------------- -------------------------------------------------- --------- ------------------------------------------------------------------------------------------------------------------------------------------------------ --- ----------- ---------- -------------------------------------------------- ---------- - -
+gvhttt_nahoang  Nguyen Anh Hoang                                   02-NOV-60 332 Nguyen Thai Hoc, Tp HCM                                                                                                                            Nam 123456781   987654321  7B9B067868DEE9AB27C0CCC697588377                   httt       0 1
+gvu_ntmthu      Nguyen Tuan My Thu                                 08-FEB-62 80 Le Hong Phong, Tp HCM                                                                                                                               Nam 123456123   987654322  C2CE371ABFB52F05D352CFFDC9261E48                              0 0
+gvktpm_lbluan   Ly Ba Luan                                         02-JAN-67 34 Mai Thi Lu, Tp HCM                                                                                                                                  Nam 123456124   987654323  8B46D7496F4CE80064407545FCAE6224                   ktpm       0 1
+gvkhmt_ltlinh   Ly Tu Linh                                         03-APR-67 95 Ba ria Vung Tau                                                                                                                                     Nam 123456125   987654324  F5CAC7B4E94AC343A36130906C61DBE6                   khmt       0 1
+
+
+Error starting at line : 50 in command -
+SELECT MAGIAOVIEN, NV_ENCRYPT.DECRYPT_(EMAIL_GV), DTB FROM SINHVIEN
+Error at Command Line : 50 Column : 51
+Error report -
+SQL Error: ORA-00904: "DTB": invalid identifier
+00904. 00000 -  "%s: invalid identifier"
+*Cause:    
+*Action:
+
+Error starting at line : 50 in command -
+SELECT MAGIAOVIEN, NV_ENCRYPT.DECRYPT_(EMAIL_GV), DTB FROM GIAOVIEN
+Error at Command Line : 50 Column : 51
+Error report -
+SQL Error: ORA-00904: "DTB": invalid identifier
+00904. 00000 -  "%s: invalid identifier"
+*Cause:    
+*Action:
+
+MAGIAOVIEN
+---------------
+NV_ENCRYPT.DECRYPT_(EMAIL_GV)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+gvhttt_nahoang  
+hoang@gmail.com                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+
+gvu_ntmthu      
+khai@gmail.com                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+
+gvktpm_lbluan   
+luan@gmail.com                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+
+
+MAGIAOVIEN
+---------------
+NV_ENCRYPT.DECRYPT_(EMAIL_GV)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+gvkhmt_ltlinh   
+linh@gmail.com                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+
+
